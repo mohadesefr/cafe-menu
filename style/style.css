@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #404040;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  margin: 80px 0;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px;
+}
+.button .button-style {
+  padding: 8px 16px;
+  background-color: #dfa25f;
+  border-color: #dfa25f;
+  border-radius: 8px;
+  border: 1px solid #6C0400;
+  margin-right: 8px;
+  margin-top: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+}
+.button .button-style:hover {
+  background-color: #6C0400;
+  color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .button .button-style {
+    flex-grow: 1;
+  }
+}
+.button .active-button {
+  background-color: #6C0400;
+  color: #fff;
+}
+
+.menu {
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+@media screen and (max-width: 1295px) {
+  .menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.menu-box {
+  display: grid;
+  grid-template-columns: 184px calc(100% - 200px);
+  grid-gap: 16px;
+  width: 100%;
+}
+.menu-box .img-menu {
+  border: 4px solid #dfa25f;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+@media screen and (max-width: 628px) {
+  .menu-box .img-menu {
+    height: 254px;
+  }
+}
+.menu-box .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+.menu-box .info::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #6C0400;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.menu-box .info > p {
+  color: #dfa25f;
+}
+@media screen and (max-width: 628px) {
+  .menu-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
